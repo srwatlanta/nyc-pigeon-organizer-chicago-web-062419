@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
   end
   data[:lives].each do |value, names|
     names.each do |name|
-      if data[:lives][value]include?(name)
+      if data[:lives][value].include?(name)
         new_pigeon_hash[name][:lives] << value.to_s
       end
     end
